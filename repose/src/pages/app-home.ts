@@ -17,42 +17,46 @@ export class AppHome extends LitElement {
   static styles = [
     styles,
     css`
-    #welcomeBar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+   .hero{
+   height: 98vh;
+   min-height: 600px;
+   max-height: 900px;
+   max-width:  100%
+   max-width: 100vw;
+   padding: 0 48px;
+   overflow-x: hidden;
+   position: relative;
+   }
 
-    #welcomeCard,
-    #infoCard {
-      padding: 18px;
-      padding-top: 0px;
-    }
+   .hero__inner {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   }
 
-    sl-card::part(footer) {
-      display: flex;
-      justify-content: flex-end;
-    }
+   header{
+   margin: 0  2rem;
+   }
 
-    @media(min-width: 750px) {
-      sl-card {
-        width: 70vw;
-      }
-    }
+   .hero {
+   padding: 0 1rem;
+   }
 
+   .hero__top-content {
+   margin: 1rem 0;
+   }
 
-    @media (horizontal-viewport-segments: 2) {
-      #welcomeBar {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-      }
+   .hero__top-content h1 {
+   font-size: 36px;
+   }
 
-      #welcomeCard {
-        margin-right: 64px;
-      }
-    }
+   .hero__bottom-content {
+   margin-top: 7rem;
+   }
+   }
   `];
 
   async firstUpdated() {
@@ -79,7 +83,7 @@ export class AppHome extends LitElement {
       <div class="hero__inner">
       <div class="hero__top-content">
       <h1> Intelllignt Daily Mood Journal</h1>
-      <p> Repose is your personal mood traacking companion that helps you organize and reflect upon</p>
+      <p> Repose is your personal mood traacking companion that helps you organize and reflect upon.</p>
       <fluent-anchor href="/journal" appearance="lightweight" >Mood Check-in </fluent-anchor>
       </div>
       <div class="hero__bottom-content">
