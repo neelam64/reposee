@@ -1,6 +1,6 @@
 import { LitElement, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
-
+import './script/components/hero-decor';
 import './pages/app-home';
 import './components/header';
 import './styles/global.css';
