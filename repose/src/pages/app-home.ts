@@ -73,7 +73,22 @@ export class AppHome extends LitElement {
 
   render() {
     return html`
-      <app-header></app-header>
+      <app-header> 
+      <div class="hero">
+      <hero-decor> </hero-decor>
+      <div class="hero__inner">
+      <div class="hero__top-content">
+      <h1> Intelllignt Daily Mood Journal</h1>
+      <p> Repose is your personal mood traacking companion that helps you organize and reflect upon</p>
+      <fluent-anchor href="/journal" appearance="lightweight" >Mood Check-in </fluent-anchor>
+      </div>
+      <div class="hero__bottom-content">
+      <img src="assests/media/humans.svg" alt="Humans">
+      </div>
+
+      </div>
+      </div>
+      </app-header>
 
       <main>
         <div id="welcomeBar">
