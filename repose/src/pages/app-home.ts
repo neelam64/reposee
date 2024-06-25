@@ -86,7 +86,7 @@ export class AppHome extends LitElement {
       <img src="assests/media/humans.svg" alt="Humans">
       </div>
 
-      </div>
+      </div>n
       </div>
       </app-header>
 
