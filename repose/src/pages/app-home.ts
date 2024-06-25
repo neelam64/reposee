@@ -73,7 +73,7 @@ export class AppHome extends LitElement {
 
   render() {
     return html`
-      <app-header> 
+      <app-header></app-header>
       <div class="hero">
       <hero-decor> </hero-decor>
       <div class="hero__inner">
@@ -88,7 +88,6 @@ export class AppHome extends LitElement {
 
       </div>
       </div>
-      </app-header>
 
       <main>
         <div id="welcomeBar">
